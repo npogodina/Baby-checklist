@@ -1,3 +1,9 @@
+.header-image {
+    background-image: url("../img/headerimage.jpg");
+    background-size: cover;
+}
+
+/*
 html {
     box-sizing: border-box;
     height: 100%;
@@ -53,3 +59,4 @@ h2 {
 #paris {
     background-color: #d32f2f;
 }
+*/
