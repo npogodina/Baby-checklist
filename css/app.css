@@ -1,14 +1,6 @@
-.header-image {
-    background-image: url("../img/headerimage.jpg");
-    background-size: cover;
-}
 
 /*testing remote commits*/
-body {
-    display: flex;
-    margin: 0;
-    height: 100%;
-}
+
 
 /*
 html {
