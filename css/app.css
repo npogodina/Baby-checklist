@@ -1,4 +1,26 @@
 
+/*not needed, need to change to responsive image*/
+.baby-item {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+
+.featurette-heading {
+    font-size: 30px;
+}
+
+.featurette-heading {
+    margin-top: 0rem;
+}
+
+.lead {
+  font-size: 1.10rem;
+  font-weight: 300;
+}
+
+
 /*testing remote commits*/
 
 
