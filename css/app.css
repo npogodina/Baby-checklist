@@ -20,6 +20,16 @@
   font-weight: 300;
 }
 
+.btn-outline-success {
+  color: #ffa5ce;
+  border-color: #ffa5ce;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #ffa5ce;
+  border-color: #ffa5ce;
+}
 
 /*testing remote commits*/
 
