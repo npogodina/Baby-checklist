@@ -6,6 +6,9 @@
   height: auto;
 }
 
+.card-heading {
+
+}
 
 .featurette-heading {
     font-size: 30px;
@@ -45,11 +48,19 @@
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid #ffa5ce;
   border-radius: 0.25rem;
-  background-color: #fff6fa;
-
 }
+
+.card-pink {
+  border: 1px solid #ffa5ce;
+  background-color: #fff6fa;
+}
+
+.card-blue {
+  border: 1px solid #89cff0;
+  background-color: #e7f5fc;
+}
+
 
 /*
 .card-deck {
@@ -70,8 +81,16 @@
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
+}
+
+.card-header-pink {
   background-color: #ffa5ce;
   border-bottom: 1px solid #ffa5ce;
+}
+
+.card-header-blue {
+  background-color: #89cff0;
+  border-bottom: 1px solid #89cff0;
 }
 
 .btn {
