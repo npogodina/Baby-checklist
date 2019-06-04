@@ -136,7 +136,15 @@ li div {
 }
 
 
+/*offsetting HTML anchor to adjust for fixed header*/
+.anchor-offset-1 {
+    position:relative;
+}
 
+.anchor-offset-2 {
+    position:absolute;
+    top:-150px;
+}
 
 /*
 input {
