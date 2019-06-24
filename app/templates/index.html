@@ -10,8 +10,8 @@ extra_css: "carousel.css"
     <title>Baby Checklist</title>
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="../static/css/carousel.css">
+    <link rel="stylesheet" href="../static/css/app.css">
 </head>
 <body>
 
@@ -53,8 +53,8 @@ extra_css: "carousel.css"
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img style="object-fit: cover; overflow: hidden;"src="img/carousel-1.jpg" alt="Baby Evelynn">
-          {% include icons/placeholder.svg width="100%" height="100%" background="#777" color="#777" text=" " title=" " %}
+          <img style="object-fit: cover; overflow: hidden;"src="../static/img/carousel-1.jpg" alt="Baby Evelynn">
+          
           <div class="container">
             <div class="carousel-caption text-left">
               <h1>Getting ready for a baby?</h1>
@@ -64,8 +64,8 @@ extra_css: "carousel.css"
           </div>
         </div>
         <div class="carousel-item">
-          <img style="object-fit: cover; overflow: hidden;"src="img/carousel-2.jpg" alt="Baby Evelynn">
-          {% include icons/placeholder.svg width="100%" height="100%" background="#777" color="#777" text=" " title=" " %}
+          <img style="object-fit: cover; overflow: hidden;"src="../static/img/carousel-2.jpg" alt="Baby Evelynn">
+          
           <div class="container">
             <div class="carousel-caption">
               <h1>Do I need it all?</h1>
@@ -75,8 +75,8 @@ extra_css: "carousel.css"
           </div>
         </div>
         <div class="carousel-item">
-          <img style="object-fit: cover; overflow: hidden;"src="img/carousel-3.jpg" alt="Baby Evelynn">
-          {% include icons/placeholder.svg width="100%" height="100%" background="#777" color="#777" text=" " title=" " %}
+          <img style="object-fit: cover; overflow: hidden;"src="../static/img/carousel-3.jpg" alt="Baby Evelynn">
+          
           <div class="container">
             <div class="carousel-caption text-right">
               <h1>Quality or price?</h1>
@@ -242,8 +242,8 @@ extra_css: "carousel.css"
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Chicco-Bravo-Travel-System-Lilla/dp/B00MS9VTH4', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5">
-          <img class="baby-item"src="img/ChiccoBravo.jpg" alt="Chicco Bravo Trio Travel System">
-          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}-->
+          <img class="baby-item"src="../static/img/ChiccoBravo.jpg" alt="Chicco Bravo Trio Travel System">
+          
         </div>
       </div>
 
@@ -257,8 +257,8 @@ extra_css: "carousel.css"
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/dp/B079B3TJFM', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="img/UppaBabyVistaBundle.jpg" class="img-fluid" alt="Responsive image">
-          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}-->
+          <img src="../static/img/UppaBabyVistaBundle.jpg" class="img-fluid" alt="Responsive image">
+          
         </div>
       </div>
 
@@ -273,8 +273,8 @@ extra_css: "carousel.css"
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Delta-Children-Canton-Convertible-Bianca/dp/B06XPBNRH7', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5">
-          <img class="baby-item"src="img/Canton4in1ConvertibleCrib.jpg" alt="Canton 4 in 1 Convertible Crib">
-          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}-->
+          <img class="baby-item"src="../static/img/Canton4in1ConvertibleCrib.jpg" alt="Canton 4 in 1 Convertible Crib">
+          
         </div>
       </div>
 
@@ -288,8 +288,8 @@ extra_css: "carousel.css"
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/SwaddleMe-By-Your-Side-Sleeper/dp/B00YBADM1O', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="img/SwaddleMeBassinet.jpg" class="img-fluid" alt="SwaddleMe By Your Side Sleeper">
-          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}-->
+          <img src="../static/img/SwaddleMeBassinet.jpg" class="img-fluid" alt="SwaddleMe By Your Side Sleeper">
+          
         </div>
       </div>
 
@@ -303,7 +303,7 @@ extra_css: "carousel.css"
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; Nataliya Pogodina with ♡ &middot;  2019-{{ site.time | date: "%Y" }}  &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <p>&copy; Nataliya Pogodina with ♡ &middot;  2019  &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
 
   </main>
