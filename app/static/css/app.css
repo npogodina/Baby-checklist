@@ -1,10 +1,29 @@
+/*
+.blue-gradient {
+  background-image:
+    linear-gradient(
+      rgba(0, 15, 200, 0.5),
+      rgba(0, 15, 200, 0.5)
+    );
+ }
+*/
 
-/*not needed, need to change to responsive image*/
+.baby-icon {
+  max-width: 80%;
+  margin: auto;
+
+}
+
+
+
+
+/*not needed, need to change to responsive image
 .baby-item {
   max-width: 100%;
   display: block;
   height: auto;
 }
+*/
 
 .card-heading {
 
