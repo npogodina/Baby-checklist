@@ -1,4 +1,4 @@
-
+// testing Javascript
 function javascriptTest() {
 	var el = document.getElementById("wow");
 	el.innerHTML = "New Content";
@@ -10,19 +10,27 @@ element.addEventListener("click", javascriptTest, false);
 
 
 
-
-var count = 0;
-
-
-var increment2=0; 
+// Adding a counter to items in the checklist
+let increment2=0; 
         $(':checkbox').on('click', function() { 
             if (this.checked) {
                 increment2++;                 
             } else {
                 increment2--;
             }
-            $('#itemNumber').html( '(' + increment2 + ')');             
+            $('#itemNumber').html(increment2);
+            if (increment2 === 5) {
+            	$('#itemMessage').html("You got it! ")
+            } else if (increment2 >= 3) {
+            	$('#itemMessage').html("Almost there: ")
+            } else if (increment2 >=2) {
+            	$('#itemMessage').html("Halfway there! ")
+            }	       
     })
+
+
+
+count.addEventListener()
 
 
 
