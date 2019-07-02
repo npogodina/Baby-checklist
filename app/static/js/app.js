@@ -11,10 +11,10 @@ element.addEventListener("click", javascriptTest, false);
 
 
 // Adding a counter to items in the checklist
-let increment2=0; 
-        $(':checkbox').on('click', function() { 
+let increment2=0;
+        $(':checkbox').on('click', function() {
             if (this.checked) {
-                increment2++;                 
+                increment2++;
             } else {
                 increment2--;
             }
@@ -25,7 +25,7 @@ let increment2=0;
             	$('#itemMessage').html("Almost there: ")
             } else if (increment2 >=21) {
             	$('#itemMessage').html("Halfway there! ")
-            }	       
+            }
     })
 
 
@@ -36,7 +36,7 @@ let increment1=0;
         	} else {
         		increment1 -= 4699;
         	}
-        	$('#item-price').html(increment1);
+        	$('#item-price').html(increment1/100);
         })
 
         $('#blanket-checkbox').on('click', function() {
@@ -48,12 +48,20 @@ let increment1=0;
         	$('#item-price').html(increment1/100);
         })
 
+        $('#car-shades-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 4996;
+            } else {
+                increment1 -= 4996;
+            }
+            $('#item-price').html(increment1/100);
+        })
 
 
 
 /*
 function increaseItemNumber() {
-	count++; 
+	count++;
 	var el = document.getElementById("itemNumber");
 
 	el.innerHTML = count;
@@ -73,7 +81,7 @@ element2.addEventListener("click", increaseItemNumber, false);
 function increaseNumber() {
 	let currentNumber = document.getElementById("purchased-items-number");
 	let currentNumberContent = currentNumber.innerHTML;
-	currentNumberContent = "<p>1</p>"; 
+	currentNumberContent = "<p>1</p>";
 }
 
 var el = document.getElementById("baby-checkbox");
