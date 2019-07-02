@@ -107,7 +107,7 @@ extra_css: "carousel.css"
     -->
 
     <div class="pricing-header px-3 py-3 pt-md-1 pb-md-3 mx-auto text-center">
-      <h1 id="wow" class="featurette-heading"><span id="itemMessage">Items To Get: </span><span id="itemNumber">0</span> / 42</h1>
+      <h1 id="wow" class="featurette-heading"><span id="itemMessage">Items To Get: </span><span id="itemNumber">0</span> / 42 ($<span id="item-price">0</span> / $0 value)</h1>
       <!--<p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>-->
     </div>
 
@@ -121,8 +121,8 @@ extra_css: "carousel.css"
             <ul class="list-unstyled mt-2 mb-2">
               <li><div><input type="checkbox"><span> </span><a href="#travel-system">Car seat</a></div></li>
               <li><div><input type="checkbox"><span> </span><a href="#travel-system">Car seat carrier/stroller</a></div></li>
-              <li><div><input type="checkbox"><span> </span><a href="#diaper-backpack">Diaper backpack</a></div></li>
-              <li><div><input type="checkbox"><span> </span><a href="#blanket">Blanket</a></div></li>
+              <li><div><input type="checkbox" id="diaper-backpack-checkbox"><span> </span><a href="#diaper-backpack">Diaper backpack</a></div></li>
+              <li><div><input type="checkbox" id="blanket-checkbox"><span> </span><a href="#blanket">Blanket</a></div></li>
               <li><div><input type="checkbox"> <i>Optional: car shades, mirror</i></div></li>
             </ul>
 
@@ -252,7 +252,7 @@ extra_css: "carousel.css"
         <div class="col-md-7">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="travel-system"></span>Car Seat + Stroller = <span class="text-muted">Travel System</span></h2>
           <p class="lead">One thing you absolutely have to bring to the birth center is a car seat, and while all infant car seats look very similar, the most convenient would be the one which comes with a travel system. It will include a base which you install in the back seat of your car, a car seat itself and a carrier which the car seat clicks in to. This allow to move your baby in and out of the car without having to wake her up! Absolute must have. The one I chose – Chicco Bravo – also transforms into a regular stroller which will carry your baby from ~6 month (that’s when they start sitting up) through toddler years. Good to know: you can purchase multiple car bases if you use more than one car. </p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Chicco Bravo Trio Travel System:</span> $379.99, Amazon.com</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Chicco Bravo Trio Travel System:</span> $<span class="price">379.99</span>, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Chicco-Bravo-Travel-System-Lilla/dp/B00MS9VTH4', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5">
@@ -282,7 +282,7 @@ extra_css: "carousel.css"
         <div class="col-md-7">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="diaper-backpack"></span>Diaper Backpack</h2>
           <p class="lead">Now one might argue that any backpack or roomy bag will work just fine for purposes of carrying diapers and bottles, but hey, I didn’t have a spare one. A diaper backpack will also come with a changing pad and insulated bottle pockets – nice! Not to mention tons of pockets to keep you organized. And there are all kinds of designs for you to choose from. My husband and I decided on a neutral gray one so we both feel good about wearing it.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">HapTim Multi-Function Large Baby Diaper Bag:</span> $46.99, Amazon.com</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">HapTim Multi-Function Large Baby Diaper Bag:</span> $<span id="diaper-backpack-price">46.99</span>, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B01MCWVQN1', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5">
@@ -298,7 +298,7 @@ extra_css: "carousel.css"
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="blanket"></span>Blanket: <span class="text-muted">keep her warm!</span></h2>
           <p class="lead">Regardless of what time of the year we’re talking about, it’s a good idea to have a medium warmth blanket handy, even during summer. Because, you know, air conditioners. A blanket is an easy way to add an extra layer to your baby’s outfit, and it’s actually the only safe way to keep your baby warm in a car in colder months. Safety guidelines forbid parents from bundling up little ones in winter coats and parkas when putting them in a car seat, because the straps won’t tighten well enough. You dress the baby into a fleece suit, strap her into the seat and then tuck a blanket on top of it. My family ended up getting a blanket for every car, stroller and place where baby has to spend time at. We had at least five, if not more!</p>
           <p class="lead">The very important piece here – you can’t leave a baby with a blanket unsupervised because of a suffocation risk. That means that you’re either constantly keeping an eye on him or swaddle/tuck the blanket into the car seat nice and snug.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Hudson Baby Super Plush Blanket:</span> $11.99, Amazon.com</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Hudson Baby Super Plush Blanket:</span> $<span id="blanket-price">11.99</span>, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B01BGG3I0U', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5 order-md-1">

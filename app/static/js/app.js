@@ -19,18 +19,35 @@ let increment2=0;
                 increment2--;
             }
             $('#itemNumber').html(increment2);
-            if (increment2 === 5) {
+            if (increment2 ===42) {
             	$('#itemMessage').html("You got it! ")
-            } else if (increment2 >= 3) {
+            } else if (increment2 >= 30) {
             	$('#itemMessage').html("Almost there: ")
-            } else if (increment2 >=2) {
+            } else if (increment2 >=21) {
             	$('#itemMessage').html("Halfway there! ")
             }	       
     })
 
 
+let increment1=0;
+        $('#diaper-backpack-checkbox').on('click', function() {
+        	if (this.checked) {
+        		increment1 += 4699;
+        	} else {
+        		increment1 -= 4699;
+        	}
+        	$('#item-price').html(increment1);
+        })
 
-count.addEventListener()
+        $('#blanket-checkbox').on('click', function() {
+        	if (this.checked) {
+        		increment1 += 1199;
+        	} else {
+        		increment1 -= 1199;
+        	}
+        	$('#item-price').html(increment1/100);
+        })
+
 
 
 
