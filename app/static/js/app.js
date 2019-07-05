@@ -1,15 +1,3 @@
-// testing Javascript
-function javascriptTest() {
-	var el = document.getElementById("wow");
-	el.innerHTML = "New Content";
-}
-
-var element = document.getElementById("wow");
-
-element.addEventListener("click", javascriptTest, false);
-
-
-
 // Adding a counter to items in the checklist
 let increment2=0;
         $(':checkbox').on('click', function() {
