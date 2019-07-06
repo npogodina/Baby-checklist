@@ -18,6 +18,24 @@ let increment2=0;
 
 
 let increment1=0;
+        $('#car-seat-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 19999;
+            } else {
+                increment1 -= 19999;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('#stroller-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 17999;
+            } else {
+                increment1 -= 17999;
+            }
+            $('#item-price').html(increment1/100);
+        })        
+
         $('#diaper-backpack-checkbox').on('click', function() {
         	if (this.checked) {
         		increment1 += 4699;
@@ -45,6 +63,23 @@ let increment1=0;
             $('#item-price').html(increment1/100);
         })
 
+        $('.onesies-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 1680;
+            } else {
+                increment1 -= 1680;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('.sleep-and-play-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 4500;
+            } else {
+                increment1 -= 4500;
+            }
+            $('#item-price').html(increment1/100);
+        })
 
 
 /*

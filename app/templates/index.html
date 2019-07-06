@@ -106,8 +106,8 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-2 mb-2">
-              <li><div><input type="checkbox"><span> </span><a href="#travel-system">Car Seat</a></div></li>
-              <li><div><input type="checkbox"><span> </span><a href="#travel-system">Car Seat Carrier/Stroller</a></div></li>
+              <li><div><input type="checkbox" id="car-seat-checkbox"><span> </span><a href="#travel-system">Car Seat</a></div></li>
+              <li><div><input type="checkbox" id="stroller-checkbox"><span> </span><a href="#travel-system">Car Seat Carrier/Stroller</a></div></li>
               <li><div><input type="checkbox" id="diaper-backpack-checkbox"><span> </span><a href="#diaper-backpack">Diaper backpack</a></div></li>
               <li><div><input type="checkbox" id="blanket-checkbox"><span> </span><a href="#blanket">Blanket</a></div></li>
               <li><div><input type="checkbox" id="car-shades-checkbox"><span> <span><a href="#car-shades"> <i>Optional: car shades, mirror</i></a></div></li>
@@ -125,11 +125,11 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-2 mb-2">
-              <li><div><input type="checkbox" id="onesies-checkbox"><span> </span><a href="#clothes">Onesies - size Newborn - x5</a></div></li>
-              <li><div><input type="checkbox"> Jumpsuits - size Newborn - x3</div></li>
-              <li><div><input type="checkbox"> Onesies - size 1 month - x5</div></li>
-              <li><div><input type="checkbox"> Jumpsuits - size 1 month - x3</div></li>
-              <li><div><input type="checkbox"> <i>Optional: jacket, hat, soft shoes</i></div></li>
+              <li><div><input type="checkbox" class="onesies-checkbox"><span> </span><a href="#clothes">Onesies - size Newborn - x5</a></div></li>
+              <li><div><input type="checkbox" class="sleep-and-play-checkbox"><span> </span><a href="#clothes">Jumpsuits - size Newborn - x3</a></div></li>
+              <li><div><input type="checkbox" class="onesies-checkbox"><span> </span><a href="#clothes">Onesies - size 1 month - x5</a></div></li>
+              <li><div><input type="checkbox" class="sleep-and-play-checkbox"><span> </span><a href="#clothes">Jumpsuits - size 1 month - x3</a></div></li>
+              <li><div><input type="checkbox" class="winter-clothes"><span> </span><a href="#clothes"><i>Optional: jacket, hat, soft shoes</i></a></div></li>
              </ul>
              <img class="baby-icon rounded mx-auto d-block" src="../static/img/icons/fashion-time-icon.png" alt="Onesie Icon">
             <!--<button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>-->
@@ -142,7 +142,7 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-2 mb-2">
-              <li><div><input type="checkbox"> Infant bath tub</div></li>
+              <li><div><input type="checkbox" class="bath-tub-checkbox"><span> </span><a href="#bath-tub">Infant bath tub</a></div></li>
               <li><div><input type="checkbox"> Baby wash & shampoo</div></li>
               <li><div><input type="checkbox"> Baby bath towel</div></li>
               <li><div><input type="checkbox"> Baby wash clothes</div></li>
@@ -387,6 +387,36 @@
       </div>
 
       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 mb-4">
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="bath-tub"></span>Baby bath tub</h2>
+          <p class="lead">The idea behind an infant tub is that it supports the body of an infant in a recline position making it easier for you to wash her. It doesn’t have to hold a lot of water (danger!) and many of them don’t hold water at all. It’s meant to be either placed in a regular bath tub or in a kitchen sink. This is that sort of an item which is absolutely okay to get used from a friend or OfferUp. Babies outgrow them in a couple of months and the little tub goes into the storage replaced by a bigger one.</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Angelcare Baby Bath Support:</span> $12.59, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Angelcare-Baby-Bath-Support-Aqua/dp/B008VWVS14/', '_blank'); return false;">Check it up!</button>
+        </div>
+        <div class="col-md-5">
+          <img src="../static/img/AngelcareBabyBath.jpg" class="img-fluid" alt="Angelcare Baby Bath Support">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 mb-4">
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="bassinet"></span>Optional: <span class="text-muted">co-sleeper bassinet</span></h2>
+          <p class="lead">Now many parents are not excited about the crib in the beginning, because it seems too big, too cold and too far away from their bed. There are all kinds of bassinets on the market, including so called bedside bassinets – those which are meant to be positioned right next to your bed for easy checking on the baby. The downside of any bassinet is that the baby will inevitably outgrow it in a next few months and will have to go back into the crib, so for me it felt like an unnecessary expense. I didn’t have a bassinet. My friend – on the contrary – did and she loved it! Their bassinet was designed for bed sharing – they placed it right on their bed between Mom and Dad. She said the baby was much happier sleeping next to them and with the C-section it was a huge relief to be able to take care of him without having to get up.</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">SwaddleMe By Your Side Sleeper:</span> $45.38, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/SwaddleMe-By-Your-Side-Sleeper/dp/B00YBADM1O', '_blank'); return false;">Check it up!</button>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="../static/img/SwaddleMeBassinet.jpg" class="img-fluid" alt="SwaddleMe By Your Side Sleeper">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">      
 
       <div class="row featurette">
         <div class="col-md-7 mb-4">
