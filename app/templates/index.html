@@ -142,11 +142,11 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-2 mb-2">
-              <li><div><input type="checkbox" class="bath-tub-checkbox"><span> </span><a href="#bath-tub">Infant bath tub</a></div></li>
-              <li><div><input type="checkbox"> Baby wash & shampoo</div></li>
-              <li><div><input type="checkbox"> Baby bath towel</div></li>
-              <li><div><input type="checkbox"> Baby wash clothes</div></li>
-              <li><div><input type="checkbox"> Rinser</div></li>
+              <li><div><input type="checkbox" id="bath-tub-checkbox"><span> </span><a href="#bath-tub">Infant bath tub</a></div></li>
+              <li><div><input type="checkbox" id="baby-wash-checkbox"><span> </span><a href="#baby-wash">Baby wash & shampoo</a></div></li>
+              <li><div><input type="checkbox" id="towel-checkbox"><span> </span><a href="#towel">Baby bath towel</a></div></li>
+              <li><div><input type="checkbox" id="washcloths-checkbox"><span> </span><a href="#washcloths">Baby wash clothes</a></div></li>
+              <li><div><input type="checkbox" id="rinser-checkbox"><span> </span><a href="#rinser">Rinser</a></div></li>
             </ul>
             <img class="baby-icon rounded mx-auto d-block" src="../static/img/icons/bath-time-icon.png" alt="Rubber Duck Icon">
             <!--<button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>-->
@@ -164,7 +164,7 @@
           </div>
           <div class="card-body">
             <ul class="list-unstyled mt-2 mb-2">
-              <li><div><input type="checkbox"><span> </span><a href="#crib">Crib</a></div></li>
+              <li><div><input type="checkbox" id="crib-checkbox"><span> </span><a href="#crib">Crib</a></div></li>
               <li><div><input type="checkbox"> Crib mattress</div></li>
               <li><div><input type="checkbox"> Waterproof crib pads x2</div></li>
               <li><div><input type="checkbox"> Crib sheets</div></li>
@@ -405,18 +405,78 @@
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2 mb-4">
-          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="bassinet"></span>Optional: <span class="text-muted">co-sleeper bassinet</span></h2>
-          <p class="lead">Now many parents are not excited about the crib in the beginning, because it seems too big, too cold and too far away from their bed. There are all kinds of bassinets on the market, including so called bedside bassinets – those which are meant to be positioned right next to your bed for easy checking on the baby. The downside of any bassinet is that the baby will inevitably outgrow it in a next few months and will have to go back into the crib, so for me it felt like an unnecessary expense. I didn’t have a bassinet. My friend – on the contrary – did and she loved it! Their bassinet was designed for bed sharing – they placed it right on their bed between Mom and Dad. She said the baby was much happier sleeping next to them and with the C-section it was a huge relief to be able to take care of him without having to get up.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">SwaddleMe By Your Side Sleeper:</span> $45.38, Amazon.com</p>
-          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/SwaddleMe-By-Your-Side-Sleeper/dp/B00YBADM1O', '_blank'); return false;">Check it up!</button>
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="baby-wash"></span>Baby wash & shampoo: <span class="text-muted">2 in 1</span></h2>
+          <p class="lead">Baby skin is sensitive which is why modern skin care industry has everything baby – baby wash and shampoo, baby oil, baby sunscreen, etc. Since we mentioned them, baby sunscreen (even though it has the word “baby” in it) should not be used until 6 months old, and baby oil is optional. Unless your baby has a very dry skin, there’s no need to apply it. Baby wash and shampoo, on the other side, are pretty much a must. They often come in one bottle, similar to men’s body wash and shampoo. One of the leading brands in baby skin care is Aveeno, and I was very happy with their products not only for the little ones, but for us parents as well. They are gentle and very lightly-scented – exactly what we need.</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Aveeno Baby Gentle Wash & Shampoo:</span> $6.97, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Aveeno-Baby-Shampoo-Natural-Tear-Free/dp/B00767LJYQ/', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="../static/img/SwaddleMeBassinet.jpg" class="img-fluid" alt="SwaddleMe By Your Side Sleeper">
+          <img src="../static/img/AveenoBabyWash.jpg" class="img-fluid" alt="Aveeno Baby Gentle Wash & Shampoo">
 
         </div>
       </div>
 
-      <hr class="featurette-divider">      
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 mb-4">
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="towel"></span>Baby bath towel</h2>
+          <p class="lead">Honestly, I believe any soft towel would do. Doesn’t have to be big, just enough to wrap the baby into it after a bath. If you’re going to get a new one, they make adorable hooded baby towels with teddy bear ears, etc. Those make great baby shower gifts. I’ve never considered myself a person with a tremendous amount of friends, and I somehow received four baby towels for my little one. Four! I kept two and gifted the other two. Ah, that’s how I got that many… Maybe hold off on this purchase?</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Premium Hooded Baby Towel and Washcloth Gift Set:</span> $27.00, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Premium-Hooded-Baby-Towels-Washcloth/dp/B01M1N82R9/', '_blank'); return false;">Check it up!</button>
+        </div>
+        <div class="col-md-5">
+          <img src="../static/img/BabyTowel.jpg" class="img-fluid" alt="Premium Hooded Baby Towel and Washcloth Gift Set">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 mb-4">
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="washcloths"></span>Baby washcloths<span class="text-muted"></span></h2>
+          <p class="lead">Sometimes baby bath towels come in a set with one or two washcloths (like the one I recommended above), but you definitely will need more than that. Washcloths are not only for the bath. They make a great cleaning tool whether it’s a baby face or a baby butt, or your new blouse. Very very handy. I kept them everywhere, including the diaper backpack and the car, etc.  How are baby washcloths different from regular washcloths? Well, they are supposed to be softer, and they are made of nice materials. For example, everyone is raving about bamboo. Interestingly enough, my favorite ones were the plain cheap ones with fairly low rating on Amazon, probably because they are very thin. But I liked them to be thin! I found it much easier to clean small creases on baby body with these, rather than thick bamboo ones.</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Spasilk Washcloths 10 pack:</span> $6.97, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Aveeno-Baby-Shampoo-Natural-Tear-Free/dp/B00767LJYQ/', '_blank'); return false;">Check it up!</button>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="../static/img/SpasilkWashcloths.jpg" class="img-fluid" alt="Spasilk Washcloths, Pink Stripes, 10 Count">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 mb-4">
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="rinser"></span>Rinser</h2>
+          <p class="lead">This is a simple item. A whale-shaped rinse cup. But if you don’t have it, how are you going to rinse the baby? It also comes with a soft rubber edge which you can gently press against your baby’s head and it will prevent water from running over her face. Don’t overestimate this feature though. It works better with a little baby who doesn’t understand what’s going on, and not so much with a older one who refuses to sit still or hold her chin up. Regardless, the whale is a must.</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Skip Hop Waterfall Rinser Bath Cup:</span> $9.99, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Skip-Hop-Tear-Free-Waterfall-Rinser/dp/B00FXR5S20', '_blank'); return false;">Check it up!</button>
+        </div>
+        <div class="col-md-5">
+          <img src="../static/img/SkipHopRinser.jpg" class="img-fluid" alt="Skip Hop Waterfall Rinser Bath Cup">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 mb-4">
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="washcloths"></span>Baby washcloths<span class="text-muted"></span></h2>
+          <p class="lead">Sometimes baby bath towels come in a set with one or two washcloths (like the one I recommended above), but you definitely will need more than that. Washcloths are not only for the bath. They make a great cleaning tool whether it’s a baby face or a baby butt, or your new blouse. Very very handy. I kept them everywhere, including the diaper backpack and the car, etc.  How are baby washcloths different from regular washcloths? Well, they are supposed to be softer, and they are made of nice materials. For example, everyone is raving about bamboo. Interestingly enough, my favorite ones were the plain cheap ones with fairly low rating on Amazon, probably because they are very thin. But I liked them to be thin! I found it much easier to clean small creases on baby body with these, rather than thick bamboo ones.</p>
+          <p class="lead on-one-line"><span class="font-weight-bold">Spasilk Washcloths 10 pack:</span> $6.97, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Aveeno-Baby-Shampoo-Natural-Tear-Free/dp/B00767LJYQ/', '_blank'); return false;">Check it up!</button>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="../static/img/SpasilkWashcloths.jpg" class="img-fluid" alt="Spasilk Washcloths, Pink Stripes, 10 Count">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7 mb-4">
@@ -428,6 +488,24 @@
         </div>
         <div class="col-md-5">
           <img src="../static/img/Canton4in1ConvertibleCrib.jpg" class="img-fluid" alt="Canton 4 in 1 Convertible Crib">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2 mb-4">
+          <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="mattress"></span>Crib mattress, mattress cover and sheets: <span class="text-muted">full set</span></h2>
+          <p class="lead">The crib won’t work until you have a mattress and a sheet. Usually a mattress is not included with a crib for the same reason an adult mattress won’t come with a bed – there are tons of options and the price range is huge. The safety guidelines call for a firm mattress that fits snugly into the crib (to prevent suffocation risk), but less expensive mattresses meet these requirements all the same. I would also recommend a waterproof cover for the mattress, so that cleaning is never a problem. As for sheets, any fitted sheets should do – yes, there are so many cute designs! Depending on the baby you may find yourself changing sheets as rarely as once in 2 weeks, or as often as every day. But since you don’t know how the routine will look like yet – 2 sheets and 2 waterproof covers would do for starters.</p>
+          <div><span class="font-weight-bold">Delta Children Twinkle Stars Mattress:</span> $54.99, Amazon.com</div>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Delta-Children-Waterproof-Lightweight-GREENGUARD/dp/B01GU9GI5A', '_blank'); return false;">Check it up!</button>
+          <p class="lead"><span class="font-weight-bold">Organic Cotton Waterproof Fitted Crib Pad:</span> $30.99, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/SwaddleMe-By-Your-Side-Sleeper/dp/B00YBADM1O', '_blank'); return false;">Check it up!</button>
+          <p class="lead"><span class="font-weight-bold">Crib Sheet Set by Ely's & Co:</span> $20.99, Amazon.com</p>
+          <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/SwaddleMe-By-Your-Side-Sleeper/dp/B00YBADM1O', '_blank'); return false;">Check it up!</button>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="../static/img/SwaddleMeBassinet.jpg" class="img-fluid" alt="SwaddleMe By Your Side Sleeper">
 
         </div>
       </div>

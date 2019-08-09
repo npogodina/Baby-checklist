@@ -34,7 +34,7 @@ let increment1=0;
                 increment1 -= 17999;
             }
             $('#item-price').html(increment1/100);
-        })        
+        })
 
         $('#diaper-backpack-checkbox').on('click', function() {
         	if (this.checked) {
@@ -81,6 +81,68 @@ let increment1=0;
             $('#item-price').html(increment1/100);
         })
 
+        $('#bath-tub-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 1259;
+            } else {
+                increment1 -= 1259;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('#baby-wash-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 697;
+            } else {
+                increment1 -= 697;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('#towel-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 2700;
+            } else {
+                increment1 -= 2700;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('#washcloths-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 699;
+            } else {
+                increment1 -= 699;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('#rinser-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 999;
+            } else {
+                increment1 -= 999;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('#crib-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 24027;
+            } else {
+                increment1 -= 24027;
+            }
+            $('#item-price').html(increment1/100);
+        })
+
+        $('#-checkbox').on('click', function() {
+            if (this.checked) {
+                increment1 += 999;
+            } else {
+                increment1 -= 999;
+            }
+            $('#item-price').html(increment1/100);
+        })
 
 /*
 function increaseItemNumber() {
