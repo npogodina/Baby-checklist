@@ -1,28 +1,40 @@
+/* General elements*/
 
-
-.list-small-heading {
-    font-size: 20px;
+ul {
+  list-style-type: none;
 }
+
+li div {
+ display: table-cell; vertical-align: middle;
+}
+
+
+/* Bootstrap 4 general classes */
+
+.lead {
+  font-size: 1.10rem;
+  font-weight: 300;
+}
+
+.on-one-line {
+    display: inline-block;
+}
+
+/*offsetting HTML anchor to adjust for fixed header*/
+.anchor-offset-1 {
+    position:relative;
+}
+
+.anchor-offset-2 {
+    position:absolute;
+    top:-110px;
+}
+
 
 
 /* Modifications to Bootstrap 4 Cards */
 
-.card-centering {
-  width: 70%;
-  margin: auto;
-}
-
-.card {
-  position: relative;
-  display: block;
-  width: 50%;
-  margin: auto;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-}
-
+/* Colored cards */
 .card-pink {
   border: 1px solid grey;
   background-image: linear-gradient(#fef6f5, 80%, #fbe1df);
@@ -31,23 +43,6 @@
 .card-blue {
   border: 1px solid grey;
   background-image: linear-gradient(white, 80%, #e7f5fc);
-  /*background-color: #e7f5fc;*/
-}
-
-
-
-
-.card-body {
-  display: inline-block;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1.25rem;
-  padding-top: 0.25rem;
-}
-
-.card-header {
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 0;
 }
 
 .card-header-pink {
@@ -60,8 +55,7 @@
   border-bottom: 1px solid #89cff0;
 }
 
-
-
+/* Responsiveness */
 .card-deck {
   display: -ms-flexbox;
   display: flex;
@@ -97,32 +91,22 @@
 }
 
 
-
-
-
-
-
-
-
+/* Modifications to Bootstrap 4 Featurettes */
 
 .featurette-divider {
   margin: 3.5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 .featurette-heading {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .featurette-heading {
-    margin-top: 0rem;
-}
-
-.lead {
-  font-size: 1.10rem;
-  font-weight: 300;
+  margin-top: 0rem;
 }
 
 
+/* Creating a pink button */
 
 .btn-outline-pink {
   color: #ffa5ce;
@@ -154,34 +138,5 @@
 .btn-outline-pink:not(:disabled):not(.disabled):active:focus, .btn-outline-pink:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-pink.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #ffa5ce;
-}
-
-
-
-
-
-
-
-ul {
-  list-style-type: none;
-}
-
-li div {
- display: table-cell; vertical-align: middle;
-}
-
-.on-one-line {
-    display: inline-block;
-}
-
-
-/*offsetting HTML anchor to adjust for fixed header*/
-.anchor-offset-1 {
-    position:relative;
-}
-
-.anchor-offset-2 {
-    position:absolute;
-    top:-110px;
 }
 
