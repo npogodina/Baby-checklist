@@ -69,6 +69,13 @@
 
   <main role="main">
 
+  <!-- Bootstrap viewport width:
+          Extra small: < 576px
+          Small: >= 576px
+          Medium: >= 768px
+          Large: >= 992px
+          Extra large: >= 1200px -->  
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -123,11 +130,12 @@
     <section>
       <div class="pricing-header mb-4 text-center">
         <h1 class="featurette-heading anchor-offset-1"><span id="list-top" class="anchor-offset-2"></span><span id="itemMessage">Baby Checklist: </span><span id="itemNumber">0</span> / 42 <span class="lead">($<span id="item-price">0</span> / $1500 value)</span></h1>
+        <!-- Last sentence starts on a new line on medium viewports and larger -->
         <p class="lead mb-0 mx-3">Click on links to jump to item descriptions. Сheck items you already own. <span class="d-md-block">Total value doesn't include optional items.</span></p>
       </div>
 
       <div class="container">
-        <div class="card-deck mb-2 babylist">
+        <div class="card-deck babylist">
           <div class="card card-pink mb-4 shadow-sm mx-auto mx-lg-3">
             <div class="card-header card-header-pink text-center">
               <h4 class="my-0 font-weight-light" style="color:#ffffff">Travel time</h4>

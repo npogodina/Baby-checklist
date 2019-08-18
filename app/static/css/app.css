@@ -1,32 +1,65 @@
 
 
-.baby-icon {
-
-
-
-}
-
-
 .list-small-heading {
     font-size: 20px;
 }
 
+
+/* Modifications to Bootstrap 4 Cards */
+
+.card-centering {
+  width: 70%;
+  margin: auto;
+}
+
 .card {
   position: relative;
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
+  display: block;
+  width: 50%;
+  margin: auto;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 
-.card-heading {
-    font-size: 25px;
+.card-pink {
+  border: 1px solid grey;
+  background-image: linear-gradient(#fef6f5, 80%, #fbe1df);
 }
+
+.card-blue {
+  border: 1px solid grey;
+  background-image: linear-gradient(white, 80%, #e7f5fc);
+  /*background-color: #e7f5fc;*/
+}
+
+
+
+
+.card-body {
+  display: inline-block;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  padding-top: 0.25rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+}
+
+.card-header-pink {
+  background-color: #f9acbc;
+  border-bottom: 1px solid #fef6f5;
+}
+
+.card-header-blue {
+  background-color: #89cff0;
+  border-bottom: 1px solid #89cff0;
+}
+
 
 
 .card-deck {
@@ -38,9 +71,10 @@
 
 .card-deck .card {
   margin-bottom: 15px;
-  min-width: 360px;
+  min-width: 360px; /* Added minimum width*/
 }
 
+/* Changed min-width from 576 (small) to 992 (large) so that we only see 3 cards in a row on large and extra large viewports */
 @media (min-width: 992px) {
   .card-deck {
     -ms-flex-flow: row wrap;
@@ -62,77 +96,7 @@
   }
 }
 
-.card-group {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
 
-.card-group > .card {
-  margin-bottom: 15px;
-}
-
-@media (min-width: 576px) {
-  .card-group {
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-  }
-  .card-group > .card {
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%;
-    margin-bottom: 0;
-  }
-  .card-group > .card + .card {
-    margin-left: 0;
-    border-left: 0;
-  }
-  .card-group > .card:not(:last-child) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .card-group > .card:not(:last-child) .card-img-top,
-  .card-group > .card:not(:last-child) .card-header {
-    border-top-right-radius: 0;
-  }
-  .card-group > .card:not(:last-child) .card-img-bottom,
-  .card-group > .card:not(:last-child) .card-footer {
-    border-bottom-right-radius: 0;
-  }
-  .card-group > .card:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .card-group > .card:not(:first-child) .card-img-top,
-  .card-group > .card:not(:first-child) .card-header {
-    border-top-left-radius: 0;
-  }
-  .card-group > .card:not(:first-child) .card-img-bottom,
-  .card-group > .card:not(:first-child) .card-footer {
-    border-bottom-left-radius: 0;
-  }
-}
-
-.card-columns .card {
-  margin-bottom: 0.75rem;
-}
-
-@media (min-width: 576px) {
-  .card-columns {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-    orphans: 1;
-    widows: 1;
-  }
-  .card-columns .card {
-    display: inline-block;
-    width: 100%;
-  }
-}
 
 
 
@@ -193,67 +157,8 @@
 }
 
 
-/*
-.card-font {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 200;
-  color: #5f94bf;
-  font-size: 14px;
-}
-*/
-
-.card-centering {
-  width: 70%;
-  margin: auto;
-}
-
-.card {
-  position: relative;
-  display: block;
-  width: 50%;
-  margin: auto;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
-}
-
-.card-pink {
-  border: 1px solid grey;
-  background-image: linear-gradient(#fef6f5, 80%, #fbe1df);
-}
-
-.card-blue {
-  border: 1px solid grey;
-  background-image: linear-gradient(white, 80%, #e7f5fc);
-  /*background-color: #e7f5fc;*/
-}
 
 
-
-
-.card-body {
-  display: inline-block;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1.25rem;
-  padding-top: 0.25rem;
-}
-
-.card-header {
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 0;
-}
-
-.card-header-pink {
-  background-color: #f9acbc;
-  border-bottom: 1px solid #fef6f5;
-}
-
-.card-header-blue {
-  background-color: #89cff0;
-  border-bottom: 1px solid #89cff0;
-}
 
 
 
@@ -280,84 +185,3 @@ li div {
     top:-110px;
 }
 
-/*
-input {
-    width: 20px;
-
-    position: relative;
-    left: 200px;
-
-    vertical-align: middle;
-}
-
-li {
-    width: 200px;
-
-    position: relative;
-    left: -20px;
-
-    display: inline-block;
-    vertical-align: middle;
-}
-
-
-/*testing remote commits*/
-
-
-/*
-html {
-    box-sizing: border-box;
-    height: 100%;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    display: flex;
-    margin: 0;
-    height: 100%;
-}
-
-.container {
-    margin: auto;
-    padding: 1em;
-    width: 80%;
-}
-
-.destination-container {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-}
-
-.destination {
-    background: #03a9f4;
-    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.4);
-    color: white;
-    margin: 0.5em;
-    min-height: 200px;
-    flex: 0 1 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-h2 {
-    margin: 0;
-    transform: rotate(-45deg);
-    text-shadow: 0 0 5px #01579b;
-}
-
-#florida {
-    background-color: #03a9f4;
-}
-
-#paris {
-    background-color: #d32f2f;
-}
-*/
