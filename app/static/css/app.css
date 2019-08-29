@@ -105,6 +105,16 @@ li div {
   margin-top: 0rem;
 }
 
+.f-image-size {
+  max-width: 60%; /* make images smaller on smaller viewports */
+}
+
+@media (min-width: 992px) {
+  .f-image-size {
+    max-width: 100%;
+  }
+}
+
 
 /* Creating a pink button */
 
@@ -139,4 +149,6 @@ li div {
 .show > .btn-outline-pink.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem #ffa5ce;
 }
+
+
 
