@@ -13,7 +13,10 @@ let increment2=0;
             	$('#itemMessage').html("Almost there: ")
             } else if (increment2 >=21) {
             	$('#itemMessage').html("Halfway there! ")
+            } else if (increment2 <21) {
+            	$('#itemMessage').html("Baby Checklist: ")
             }
+
     })
 
 
