@@ -77,7 +77,9 @@
           Medium: >= 768px
           Large: >= 992px
           Extra large: >= 1200px -->  
-
+   
+    <!-- Carousel
+    ================================================== -->     
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -85,7 +87,7 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active justify-content-center">
           <img style="object-fit: cover; overflow: hidden;"src="../static/img/Carousel-1.jpg">
 
           <div class="container">
@@ -129,7 +131,14 @@
       </a>
     </div>
 
+    <!--Header image (displayed on screens smaller than large - most likely won't need) 
     <section>
+      <img src="../static/img/Carousel-1.jpg" class="img-fluid">
+    </section> -->
+
+    <!-- Cards - visible on large and xl screens
+    ================================================== -->
+    <section class="d-none d-lg-block">
       <div class="pricing-header mb-4 text-center">
         <h1 class="featurette-heading anchor-offset-1"><span id="list-top" class="anchor-offset-2"></span><span id="itemMessage">Baby Checklist: </span><span id="itemNumber">0</span> / 42 <span class="lead">($<span id="item-price">0</span> / $1571.01 value)</span></h1>
         <!-- Last sentence starts on a new line on medium viewports and larger -->
@@ -164,10 +173,10 @@
             </div>
             <div class="card-body">
               <ul class="list-unstyled mt-2 mb-2">
-                <li><div><input type="checkbox" class="onesies-checkbox"><span> </span><a href="#clothes">Onesies - size Newborn - x5</a></div></li>
-                <li><div><input type="checkbox" class="sleep-and-play-checkbox"><span> </span><a href="#clothes">Sleep & Plays - size Newborn - x3</a></div></li>
-                <li><div><input type="checkbox" class="onesies-checkbox"><span> </span><a href="#clothes">Onesies - size 1 month - x5</a></div></li>
-                <li><div><input type="checkbox" class="sleep-and-play-checkbox"><span> </span><a href="#clothes">Sleep & Plays - size 1 month - x3</a></div></li>
+                <li><div><input type="checkbox" class="onesies-checkbox"><span> </span><a href="#clothes">Onesies - size Newborn</a></div></li>
+                <li><div><input type="checkbox" class="sleep-and-play-checkbox"><span> </span><a href="#clothes">Sleep&Plays - size Newborn</a></div></li>
+                <li><div><input type="checkbox" class="onesies-checkbox"><span> </span><a href="#clothes">Onesies - size 1 month</a></div></li>
+                <li><div><input type="checkbox" class="sleep-and-play-checkbox"><span> </span><a href="#clothes">Sleep&Plays - size 1 month</a></div></li>
                 <li><div><input type="checkbox" class="winter-clothes"><span> </span><a href="#clothes"><i>Optional: jacket, hat, soft shoes</i></a></div></li>
                </ul>
                <img class="baby-icon rounded mx-auto d-sm-block d-none" src="../static/img/icons/rompers-girl.svg" height="64px" alt="Onesie Icon">
@@ -270,11 +279,11 @@
 
     <div class="container marketing">
       
-      <hr class="featurette-divider">
+      <hr class="featurette-divider d-none d-lg-block">
 
       <div class="pricing-header mb-5 text-center">
-          <h1 class="featurette-heading anchor-offset-1">Items Description</h1>
-          <!-- Last sentence starts on a new line on medium viewports and larger -->
+          <h1 class="featurette-heading anchor-offset-1 d-none d-lg-block">Items Description</h1>
+          <h1 class="featurette-heading anchor-offset-1 d-lg-none">Baby Checklist</h1>
           <p class="lead mb-0 mx-3">With specific item suggestions and Amazon links.</p>
           <img class="mb-3" src="../static/img/icons/baby-sign-flags.svg" height="100px">
 
@@ -284,7 +293,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="travel-system"></span>Car Seat + Stroller = <span class="text-muted">Travel System</span></h2>
           <p class="lead">One thing you absolutely have to bring to the birth center is a car seat, and while all infant car seats look very similar, the most convenient would be the one which comes with a travel system. It will include a base which you install in the back seat of your car, a car seat itself and a carrier which the car seat clicks in to. This allow to move your baby in and out of the car without having to wake her up! Absolute must have. The one I chose – Chicco Bravo – also transforms into a regular stroller which will carry your baby from ~6 month (that’s when they start sitting up) through toddler years. Good to know: you can purchase multiple car bases if you use more than one car. </p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Chicco Bravo Trio Travel System:</span> $<span class="price">379.99</span>, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Chicco Bravo Trio Travel System:</span> $<span class="price">379.99</span>, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Chicco-Bravo-Travel-System-Lilla/dp/B00MS9VTH4', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -297,7 +306,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading">Alternative: <span class="text-muted">bassinet included</span></h2>
           <p class="lead">One downside of Chicco Bravo Travel System is that it doesn’t come with a bassinet, which means that if you want to take your baby on a walk, she’ll have to stay in a somewhat upright position strapped to the seat for the whole time. Bassinet, on the opposite side, provides the comfort of the crib and your baby will lay down in it perfectly flat. I personally didn’t enjoy long walks for the first half a year of my baby’s life, so for my needs – such as shopping trips – Chicco Bravo worked just fine. My friend, however, spent hours pushing the stroller at the nearest waterfront park. Well, she was lucky to live near one, and then again that’s how her baby prefferd to sleep. Her family chose to invest into a more functional, more solid and definitely fancier option. The model offers a car seat, a bassinet and a carrier which will work with both of them.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">UPPAbaby Vista Stroller & MESA Car Seat Bundle:</span> $1,199.98, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">UPPAbaby Vista Stroller & MESA Car Seat Bundle:</span> $1,199.98, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/dp/B079B3TJFM', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -312,7 +321,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="diaper-backpack"></span>Diaper backpack</h2>
           <p class="lead">Now one might argue that any backpack or roomy bag will work just fine for purposes of carrying diapers and bottles, but hey, I didn’t have a spare one. A diaper backpack will also come with a changing pad and insulated bottle pockets – nice! Not to mention tons of pockets to keep you organized. And there are all kinds of designs for you to choose from. My husband and I decided on a neutral gray one so we both feel good about wearing it.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">HapTim Multi-Function Large Baby Diaper Bag:</span> $<span id="diaper-backpack-price">46.99</span>, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">HapTim Multi-Function Large Baby Diaper Bag:</span> $<span id="diaper-backpack-price">46.99</span>, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B01MCWVQN1', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -328,7 +337,7 @@
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="blanket"></span>Blanket: <span class="text-muted">keep her warm!</span></h2>
           <p class="lead">Regardless of what time of the year we’re talking about, it’s a good idea to have a medium warmth blanket handy, even during summer. Because, you know, air conditioners. A blanket is an easy way to add an extra layer to your baby’s outfit, and it’s actually the only safe way to keep your baby warm in a car in colder months. Safety guidelines forbid parents from bundling up little ones in winter coats and parkas when putting them in a car seat, because the straps won’t tighten well enough. You dress the baby into a fleece suit, strap her into the seat and then tuck a blanket on top of it. My family ended up getting a blanket for every car, stroller and place where baby has to spend time at. We had at least five, if not more!</p>
           <p class="lead">The very important piece here – you can’t leave a baby with a blanket unsupervised because of a suffocation risk. That means that you’re either constantly keeping an eye on him or swaddle/tuck the blanket into the car seat nice and snug.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Hudson Baby Super Plush Blanket:</span> $<span id="blanket-price">13.47</span>, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Hudson Baby Super Plush Blanket:</span> $<span id="blanket-price">13.47</span>, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B01BGG3I0U', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -343,7 +352,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="car-shades"></span>Car window shades</h2>
           <p class="lead">For car shades, if you’re planning on going places with your newborn and your area gets lots of sun (lucky!), then they are pretty much a necessity. My baby was born in Seattle in the midst of raining season, so I was able to postpone the purchase until later. I still had to get them though! And they don’t have to be a special baby product. It’s more important that they fit well in your car (and cover as much window as possible) than what giraffe picture they have on them.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Enovoe Car Window Shade:</span> $12.97, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Enovoe Car Window Shade:</span> $12.97, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Enovoe-Car-Window-Shade-Protection/dp/B00KL3ALGO/', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -358,7 +367,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="car-mirror"></span>Baby car mirror: <span class="text-muted">connect & have fun!</span></h2>
           <p class="lead">A car mirror is more of an optional purchase. It attaches to the back seat so that you can see the baby while driving. To me it was very well worth it, but it’s still not the same as being next to her. My baby girl slept very well in the car and I remember myself wondering if she’s sleeping or… ?  Ah, let’s pull to the side and check!.. There are also car mirrors that lit up and play music for your little one’s entertainment. My baby really liked ours when she was ~3-5 months, but it won’t be much fun for an older baby.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Brica® Baby In-Sight® Magical Firefly™ Car Back Seat Mirror</span> $36.99, buybuybaby.com</p>
+          <p class="lead"><span class="font-weight-bold">Brica® Baby In-Sight® Magical Firefly™ Car Back Seat Mirror</span> $36.99, buybuybaby.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.buybuybaby.com/store/product/brica-reg-baby-in-sight-reg-magical-firefly-trade-car-back-seat-mirror-in-green/5215254', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -437,7 +446,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="bath-tub"></span>Baby bath tub</h2>
           <p class="lead">The idea behind an infant tub is that it supports the body of an infant in a recline position making it easier for you to wash her. It doesn’t have to hold a lot of water (danger!) and many of them don’t hold water at all. It’s meant to be either placed in a regular bath tub or in a kitchen sink. This is that sort of an item which is absolutely okay to get used from a friend or OfferUp. Babies outgrow them in a couple of months and the little tub goes into the storage replaced by a bigger one.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Angelcare Baby Bath Support:</span> $24.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Angelcare Baby Bath Support:</span> $24.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Angelcare-Baby-Bath-Support-Aqua/dp/B008VWVS14/', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -452,7 +461,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="baby-wash"></span>Baby wash & shampoo: <span class="text-muted">2 in 1</span></h2>
           <p class="lead">Baby skin is sensitive which is why modern skin care industry has everything baby – baby wash and shampoo, baby oil, baby sunscreen, etc. Since we mentioned them, baby sunscreen (even though it has the word “baby” in it) should not be used until 6 months old, and baby oil is optional. Unless your baby has a very dry skin, there’s no need to apply it. Baby wash and shampoo, on the other side, are pretty much a must. They often come in one bottle, similar to men’s body wash and shampoo. One of the leading brands in baby skin care is Aveeno, and I was very happy with their products not only for the little ones, but for us parents as well. They are gentle and very lightly-scented – exactly what we need.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Aveeno Baby Gentle Wash & Shampoo:</span> $6.97, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Aveeno Baby Gentle Wash & Shampoo:</span> $6.97, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Aveeno-Baby-Shampoo-Natural-Tear-Free/dp/B00767LJYQ/', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -467,7 +476,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="towel"></span>Baby bath towel</h2>
           <p class="lead">Honestly, I believe any soft towel would do. Doesn’t have to be big, just enough to wrap the baby into it after a bath. If you’re going to get a new one, they make adorable hooded baby towels with teddy bear ears, etc. Those make great baby shower gifts. I’ve never considered myself a person with a tremendous amount of friends, and I somehow received four baby towels for my little one. Four! I kept two and gifted the other two. Ah, that’s how I got that many… Maybe hold off on this purchase?</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Premium Hooded Baby Towel and Washcloth Gift Set:</span> $25.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Premium Hooded Baby Towel and Washcloth Gift Set:</span> $25.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Premium-Hooded-Baby-Towels-Washcloth/dp/B01M1N82R9/', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -482,7 +491,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="washcloths"></span>Baby washcloths<span class="text-muted"></span></h2>
           <p class="lead">Sometimes baby bath towels come in a set with one or two washcloths (like the one I recommended above), but you definitely will need more than that. Washcloths are not only for the bath. They make a great cleaning tool whether it’s a baby face or a baby butt, or your new blouse. Very very handy. I kept them everywhere, including the diaper backpack and the car, etc.  How are baby washcloths different from regular washcloths? Well, they are supposed to be softer, and they are made of nice materials. For example, everyone is raving about bamboo. Interestingly enough, my favorite ones were the plain cheap ones with fairly low rating on Amazon, probably because they are very thin. But I liked them to be thin! I found it much easier to clean small creases on baby body with these, rather than thick bamboo ones.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Spasilk Washcloths 10 pack:</span> $6.97, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Spasilk Washcloths 10 pack:</span> $6.97, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Spasilk-Pack-Soft-Terry-Washcloth/dp/B002LARFQY', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -497,7 +506,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="rinser"></span>Rinser</h2>
           <p class="lead">This is a simple item. A whale-shaped rinse cup. But if you don’t have it, how are you going to rinse the baby? It also comes with a soft rubber edge which you can gently press against your baby’s head and it will prevent water from running over her face. Don’t overestimate this feature though. It works better with a little baby who doesn’t understand what’s going on, and not so much with a older one who refuses to sit still or hold her chin up. Regardless, the whale is a must.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Skip Hop Waterfall Rinser Bath Cup:</span> $9.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Skip Hop Waterfall Rinser Bath Cup:</span> $9.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Skip-Hop-Tear-Free-Waterfall-Rinser/dp/B00FXR5S20', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -513,7 +522,7 @@
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="crib"></span>Crib</h2>
           <p class="lead">Crib is not only a place where your baby sleeps. It is also a safe place where you can leave the baby unattended knowing that she won’t roll over and fall (the danger becomes real at ~4 months of age). Therefore, definitely, get a crib! I am linking the one we ended up buying – and we are very happy with it! – but, honestly, I think the decision should come up to your furniture preferences. Cribs come in two sizes – standard and mini. You need a standard one which will fit a mattress of 28 x 52. Most cribs will feature adjustable mattress heights. Putting a baby down into a crib without waking her up is quite a task, so assemble the crib with your mattress on the highest setting – you’ll be grateful for that!</p>
           <p class="lead"> Now, what you also need to know is that when your baby will start sleeping in the crib is a big question, and will depend on your thoughts around co-sleeping. Co-sleeping is considered unsafe and oh so not recommended by American Academy of Pediatrics, but many Moms end up going co-sleeping route anyways. Sleep training an infant is hard. Having to get up for a feeding 3-4 times/night is hard.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Delta Canton 4-in-1 Convertible Crib:</span> $249.96, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Delta Canton 4-in-1 Convertible Crib:</span> $249.96, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Delta-Children-Canton-Convertible-Bianca/dp/B06XPBNRH7', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -572,7 +581,7 @@
           <h2 class="featurette-heading"><span class="anchor-offset-2" id="swaddle-blanket"></span>Swaddle blanket: <span class="text-muted">noone gets out!</span></h2>
           <p class="lead">You can’t leave a baby with a blanket unsupervised because of a suffocation risk, and therefore no blankets go into a crib. By blanket I mean a loose blanket. You can swaddle a baby though and I would highly encourage all new parents to at least give it a try. Swaddling is not only a great way to keep your baby warm, but also a great technique to comfort him and help him fall asleep. Babies are not used to moving their arms and legs freely, there was not much room for exercise in their mama’s belly. Being swaddled reminds them of the safe place and help them relax. If it’s a new concept to you, I highly recommend “The Happiest Baby on the Block” – a famous book by Dr. Harvey Karp. It has some great information about why babies cry, along with practical advice of what to do about it.</p>
           <p class="lead">Back to blankets. Swaddling is a skill. If you won’t do it tight enough, the little one will loosen the fabric and wriggle his arms out, and that’s exactly what kept happening to me. Even with all the diagrams and YouTube videos, I somehow still failed to get it right. And that’s when I discovered swaddle blanket wraps. These come with self-fastening flaps that securely snuggle your baby in a safe swaddling sleep sack. You don't have to remember any swaddle techniques, and your baby won't be able to squirm out! A true lifesaver!</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Ziggy Baby Swaddle Blanket:</span> $21.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Ziggy Baby Swaddle Blanket:</span> $21.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Swaddle-Blanket-Adjustable-Baby-Ziggy/dp/B01I1WGMJ6', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -586,7 +595,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="sleep-sack"></span>Sleep sack</h2>
           <p class="lead">Sleep sack is an alternative to a swaddle blanket in a sense that you’re keeping the baby warm by adding an extra layer, and it’s safe. They come in cotton and fleece, and in a variety of colors and cure designs. They are a great buy for babies who don’t like being swaddled. Yes, some babies won’t let you keep them swaddled for the whole night and some won’t tolerate it at all.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Carter's Fleece Sleep Bag:</span> $9.00 with 50% off</span>, Carters.com</p>
+          <p class="lead"><span class="font-weight-bold">Carter's Fleece Sleep Bag:</span> $9.00 with 50% off</span>, Carters.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.carters.com/carters-baby-girl-pajamas/V_17905810.html', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -601,7 +610,7 @@
           <h2 class="featurette-heading"><span class="anchor-offset-2" id="pacifier"></span>Pacifier <span class="text-muted">yaaay or nay?</span></h2>
           <p class="lead">If you’ve been researching baby stuff, you probably ran across at least a few articles advising against pacifiers. Typically these articles will emphasize that pacifiers might ruin your attempts to establish breastfeeding. The baby would prefer a pacifier over a breast or fail to develop a proper sucking technique. Personally, I thought this to be a valid point, so I waited ~3 weeks before introducing a pacifier. By that time our breastfeeding was at full speed, while my husband and I got so sleep-deprived, that we were ready to try anything to help our baby sleep longer stretches. It worked on several occasions, but overall our little one never developed a big love towards pacifiers. By the age of 6 months we got rid of them. Later I would meet parents of 2-3 year old’s who would complain how they can’t wean their kids from pacifiers. Being honest, it sort of made me feel good about ourselves. At the same time, remembering how little sleep we had, I know I would definitely try pacifiers again with my next baby.</p>
           <p class="lead">Pacifiers have sizes. That makes sense. Babies grow, so older babies will need bigger pacifiers. They also come in different shapes, which you just have to keep trying until you find the one. One of the most popular brands for newborn babies is Philips Avent.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Philips Avent Soothie 0-3mth :</span> $3.78, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Philips Avent Soothie 0-3mth :</span> $3.78, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Philips-SCF190-01-Soothie-0-3mth/dp/B0045I6IAO/?th=1', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -617,7 +626,7 @@
           <p class="lead">These three devices do different things. A rocker is similar to adult's rocking chair. You push it by either using your hands or simply nudging it with your toe to initiate the rocking motion. A bouncer is a seat on a wire frame that allows it to spring up and down. And a swing swings back and forth. Swings are powered mechanically and are larger than a bouncer or a rocker. In general, baby swings cost more too.</p>
           <p class="lead">They all, however, use the same idea of motion which babies like so much. This again goes back to their time in the womb where their world was constantly bouncing with mama’s movement. I’ve heard of kiddos who would strongly prefer one type of device over another, but my baby didn’t. We had both a bouncy seat and a swing, which worked great in a two story house! I mostly used them when my baby got sleepy during the day and needed a little help to drift off.</p>
           <p class="lead">All swings, bouncers and rockers have weight limits, but expect the magic to be over before your baby reaches it. Babies loose interest in them at around 6 months when they learn a new skill - crawling.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Fisher-Price Snugabunny Cradle 'n Swing:</span> $141.10, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Fisher-Price Snugabunny Cradle 'n Swing:</span> $141.10, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Fisher-Price-Snugabunny-Cradle-Swing-Technology/dp/B00IVNEGLW', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -631,7 +640,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="bassinet"></span>Optional: <span class="text-muted">co-sleeper bassinet</span></h2>
           <p class="lead">Now many parents are not excited about the crib in the beginning, because it seems too big, too cold and too far away from their bed. There are all kinds of bassinets on the market, including so called bedside bassinets – those which are meant to be positioned right next to your bed for easy checking on the baby. The downside of any bassinet is that the baby will inevitably outgrow it in a next few months and will have to go back into the crib, so for me it felt like an unnecessary expense. I didn’t have a bassinet. My friend – on the contrary – did and she loved it! Their bassinet was designed for bed sharing – they placed it right on their bed between Mom and Dad. She said the baby was much happier sleeping next to them and with the C-section it was a huge relief to be able to take care of him without having to get up.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">SwaddleMe By Your Side Sleeper:</span> $48.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">SwaddleMe By Your Side Sleeper:</span> $48.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/SwaddleMe-By-Your-Side-Sleeper/dp/B00YBADM1O', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -653,7 +662,7 @@
       </div>
         <div>
           <p class="lead">Now that might not make sense if you’re unfamiliar with breast feeding, but the breast pump is not just for those days when you’re away from your child. You will likely find yourself pumping to stimulate the supply in the very first days, and to express extra milk to prevent engorging, and to maybe even store some extra. All these are very good reasons to get a hold of your breast pump in advance, not after the little one comes out. Many health insurances cover breast pumps now, so check with your provider about your options. Mine recommended Medela, which was covered 100% and it did the job just fine. Now, there are many-many accessories for this pump – from cleaning supplies to breastshields of different sizes. These all seem to be important, but since you don’t know how the breast feeding journey will turn out, hold off on buying any extra for now. The only thing which makes sense purchasing right away is a set of extra bottles, so that you don’t have to wash the two that come with a pump after every pumping session. As for other accessories, after returning to work I bought a hands-free bra (this is a must!) and borrowed one of my husband’s backpacks for carrying the pump around. That’s it!</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Pump in Style Advanced® Starter Set:</span> $0.00 with most insurances</p>
+          <p class="lead"><span class="font-weight-bold">Pump in Style Advanced® Starter Set:</span> $0.00 with most insurances</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('http://www.medelabreastfeedingus.com/products/1006/pump-in-style-advanced-starter-set', '_blank'); return false;">Check it up!</button>
         </div>
 
@@ -663,7 +672,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="pump-bottles"></span>Milk collection/storage bottles</span></h2>
           <p class="lead">Most pumps come with two bottles which might seem enough for the beginning, but in reality washing them after every pumping session is a hustle. I had to purchase a set of 6 extra bottles almost right away and wish I did it earlier. Having extra bottles, you can use them not only for collecting milk, but also for a short-term storage and even for bottle-feeding – that is if you buy compatible nipples. About compatibility, before getting different brands always make sure that items you plan on buying will work with each other. Some things do, some don’t.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Medela Breast Milk Collection and Storage Bottles, 6 Pack:</span> $15.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Medela Breast Milk Collection and Storage Bottles, 6 Pack:</span> $15.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Medela-Collection-Storage-Compatible-Dishwasher/dp/B00DB5F114', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -697,7 +706,7 @@
           <p class="lead">Choosing a formula for your newborn is an important decision, and the more you plan on using formula, the more important it becomes. One of the safest, most nutritious and most difficult to get in the US is German brand Holle. If you will formula feeding exclusively, it’s a good idea to do your research and check what options are available to your family.</p>
           <p class="lead">If you’re set on breastfeeding, having some formula around will give you confidence that come what may, your little one won’t be left hungry. In this case you don’t have to be picky. Enfamil and Similac are recommended by pediatricians and readily available in any grocery/department store. You don’t even have to buy it. If you register on Enfamil or Similac web-sites, they’ll send you a free sample box, along with their coupons, etc.</p>
           <p class="lead">By the way, supplementing with formula is totally fine. Many moms will find it’s hard to maintain milk supply after returning to work. Supplementing ensures both healthy benefits of breastfeeding and having enough food to satisfy your baby’s hunger.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Similac Pro-Advance Non-GMO Infant Formula:</span> $28.98, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Similac Pro-Advance Non-GMO Infant Formula:</span> $28.98, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Similac-Pro-Advance-Non-GMO-Formula-Support/dp/B01KQ9DNV2', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -713,7 +722,7 @@
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="sterilizer"></span>Microwave Sterilizer</h2>
           <p class="lead">Sterilizers uses steam to kill bacteria on baby feeding supplies, such as bottles, nipples, pacifiers, teethers, as well as breast pump accessories. Whether to use a sterilizer at all is up to you, but many families choose to sterilize these items for at least the very beginning of their baby’s life when her immune system is still weak.</p>
           <p class="lead">There are two types of sterilizers – microwave and electric. I decided on a microwave one, because I didn’t do that much sterilizing. I mostly used it when I had to hand wash items (those washed in a dishwasher seemed clean enough) and only during the first 3-6 months of my daughter’s life. Additionally, many reviews mentioned rust type residue on electric ones.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Munchkin Steam Guard Microwave Sterilizer:</span> $19.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Munchkin Steam Guard Microwave Sterilizer:</span> $19.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Munchkin-Steam-Guard-Microwave-Sterilizer/dp/B000V9DXGS', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -727,7 +736,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="brush"></span>Bottle brush</h2>
           <p class="lead">A must-have to go with your purchase of bottles. There are plenty available, but I picked OXO because it includes a stand to ensure both your brush and your countertop will stay neat and dry. It also looked sturdier than some other brands.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">OXO Tot Bottle Brush:</span> $6.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">OXO Tot Bottle Brush:</span> $6.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B0771FFWQ2', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -742,7 +751,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="basket"></span>Dishwasher Basket</h2>
           <p class="lead">OXO also makes cute little dishwasher baskets for bottle parts and accessories which proved to be super useful. Without it you’re guaranteed spending tons of precious time searching for nipples and straws on the bottom of your dishwasher.  The doors of the basket hold up to 8 bottle nipples, which is a good amount. And you can always use it for bob baby-related items as well!</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Munchkin Steam Guard Microwave Sterilizer:</span> $9.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Munchkin Steam Guard Microwave Sterilizer:</span> $9.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B0771FFJ21', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -758,7 +767,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="burp-cloths"></span>Burp cloths... any kind of cloths!</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Simple Joys by Carter's 7-Pack Flannel Receiving Blankets:</span> $15.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Simple Joys by Carter's 7-Pack Flannel Receiving Blankets:</span> $15.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Simple-Joys-Carters-Receiving-Blankets/dp/B01M8QG62K', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -773,7 +782,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="nipple-cream"></span>Nipple cream</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Motherlove Nipple Cream:</span> $10.95, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Motherlove Nipple Cream:</span> $10.95, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Motherlove-Certified-Organic-Cracked-Nursing/dp/B0007CQ726', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -789,7 +798,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="changing-pad"></span>Changing pad: <span class="text-muted">with changing table or without</span></h2>
           <p class="lead">Under construction.</p> 
-          <p class="lead on-one-line"><span class="font-weight-bold">Summer Infant Contoured Changing Pad:</span> $22.99</p>
+          <p class="lead"><span class="font-weight-bold">Summer Infant Contoured Changing Pad:</span> $22.99</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B009EDSWJA', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -804,7 +813,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="pad-cover"></span>Changing pad cover</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">COSMOPLUS Stretchy Changing Pad Cover 2-pack:</span> $9.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">COSMOPLUS Stretchy Changing Pad Cover 2-pack:</span> $9.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/COSMOPLUS-Stretchy-Changing-Universal-Standard/dp/B07G5FSKXX', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -818,7 +827,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="waterproof-mats"></span>Waterproof changing mats</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Monvecle Baby Waterproof Bamboo Changing Mats 4-pack:</span> $11.48, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Monvecle Baby Waterproof Bamboo Changing Mats 4-pack:</span> $11.48, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B01M8JHV45', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -850,7 +859,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="wipes"></span>Baby wipes</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Huggies Natural Care Unscented Baby Wipes, 3 Refill Packs (528 Total Wipes):</span> $14.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Huggies Natural Care Unscented Baby Wipes, 3 Refill Packs (528 Total Wipes):</span> $14.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/HUGGIES-Natural-Unscented-Sensitive-Refill/dp/B07MVS998P', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -865,7 +874,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="basket"></span>Reusable tub for wipes</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Huggies Natural Care Baby Wipes, Unscented Tub :</span> $2.24, Walmart.com</p>
+          <p class="lead"><span class="font-weight-bold">Huggies Natural Care Baby Wipes, Unscented Tub :</span> $2.24, Walmart.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.walmart.com/ip/Huggies-Natural-Care-Baby-Wipes-Unscented-Tub-64-count/19802289', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">
@@ -879,7 +888,7 @@
         <div class="col-lg-7 order-lg-2 mb-4">
           <h2 class="featurette-heading anchor-offset-1"><span class="anchor-offset-2" id="diaper-cream"></span>Diaper rash ointment</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">A+D Original Diaper Rash Ointment, 4 Ounce Tube:</span> $4.52, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">A+D Original Diaper Rash Ointment, 4 Ounce Tube:</span> $4.52, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/Original-Ointment-Protectant-Lanolin-Petrolatum/dp/B01M0WWA2B', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 order-lg-1 text-center">
@@ -894,7 +903,7 @@
         <div class="col-lg-7 mb-4">
           <h2 class="featurette-heading" class="anchor-offset-1"><span class="anchor-offset-2" id="diaper-pail"></span>Diaper pail</h2>
           <p class="lead">Under construction.</p>
-          <p class="lead on-one-line"><span class="font-weight-bold">Ubbi Steel Diaper Pail</span> $79.99, Amazon.com</p>
+          <p class="lead"><span class="font-weight-bold">Ubbi Steel Diaper Pail</span> $79.99, Amazon.com</p>
           <button type="button" class="btn btn-outline-pink btn-sm" onclick=" window.open('https://www.amazon.com/gp/product/B0082AWSQ4?colid=56A464U0PO2', '_blank'); return false;">Check it up!</button>
         </div>
         <div class="col-lg-5 text-center">

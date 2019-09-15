@@ -30,7 +30,10 @@ li div {
     top:-110px;
 }
 
-
+.carousel-item > img {
+  margin: 0 auto;
+  width: 100%;
+}
 
 /* Modifications to Bootstrap 4 Cards */
 
@@ -105,8 +108,11 @@ li div {
   margin-top: 0rem;
 }
 
-.f-image-size {
-  max-width: 60%; /* make images smaller on smaller viewports */
+
+@media (min-width: 768px) {
+  .f-image-size {
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 992px) {
